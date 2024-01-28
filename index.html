@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+          <img src="assets/encrip.png" alt="Logo Encriptar">
+        </div>
+    </header>
+    <main>
+        <section id="principal__container">
+            <textarea id=text-before name="text-before" placeholder="Digite o texto aqui..."></textarea>
+            <div class="buttons">
+              <p class="info"> <img src="assets/excl.svg" alt=""> Apenas letras minúsculas e sem acento.</p>
+                <button id="botao-encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="botao-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </section>
+        </div>
+        <section id="secundario__container">
+            <textarea id=text-after name="text-after" placeholder="Nenhuma mensagem encontrada"></textarea>
+            
+            <button id="botao__copiar" onclick="copiarTexto()">Copiar Texto</button>
+        </div>
+        </div>
+    </main>
+    <footer>
+      Desenvolvido por Will Matheus
+      <div class="footer-icons">
+          <a href="https://github.com/OWillMatheuz" target="_blank">
+              <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/willmatheuz/" target="_blank">
+              <i class="fab fa-instagram"></i>
+          </a>
+      </div>
+  </footer>
+</body>
+
+</html>
